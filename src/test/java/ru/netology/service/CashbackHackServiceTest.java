@@ -26,4 +26,9 @@ public class CashbackHackServiceTest {
     public void ifAmountNegative() {
         assertEquals(service.remain(-1),1001);
     }
+
+    @Test
+    public void buyEquals1000() {
+        assertEquals(service.remain(1000), 0);
+    }
 }
